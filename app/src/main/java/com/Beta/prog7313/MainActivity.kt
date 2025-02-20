@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         val backButton = findViewById<Button>(R.id.button2)
 
 
+
         backButton.setOnClickListener {
             val intent = Intent(this, MainActivityNavePage::class.java)
             startActivity(intent)
