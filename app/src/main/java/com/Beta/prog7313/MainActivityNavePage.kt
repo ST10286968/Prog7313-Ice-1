@@ -27,6 +27,7 @@ class MainActivityNavePage : AppCompatActivity() {
         val subtractButton = findViewById<Button>(R.id.button3)
         val multiplicationButton = findViewById<Button>(R.id.button4)
         val divisionButton = findViewById<Button>(R.id.button5)
+        val uploadImage = findViewById<Button>(R.id.uploadImage)
 
         calculatorButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
@@ -43,6 +44,9 @@ class MainActivityNavePage : AppCompatActivity() {
 
         divisionButton.setOnClickListener {
             Toast.makeText(this, "This feature is coming soon", Toast.LENGTH_SHORT).show()
+        }
+        uploadImage.setOnClickListener {
+            val intent = Intent(this, MainActivityUploadImage::class.java)
         }
 
     }
